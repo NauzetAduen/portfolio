@@ -1,0 +1,23 @@
+.dividedDiv {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 20px;
+  height: 100%;
+}
+
+.info {
+  background-color: grey;
+  text-align: center;
+}
+.quote {
+  font-family: "Rock Salt";
+  text-align: end;
+}
+.intro {
+  padding: 0 15vmin;
+  font-size: 30px;
+}
+.name {
+  font-family: "Rock Salt";
+  font-size: 36px;
+}
