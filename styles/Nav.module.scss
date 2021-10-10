@@ -1,14 +1,16 @@
 @use "Constants" as constants;
 
 .nav {
-  //   background-color: gold;
-
+  // background-color: gold;
+  position: fixed;
   font-family: constants.$rockSalt;
+  width: 100%;
 }
 .nav ul {
   display: flex;
   padding: 0;
   margin: 0;
+  height: 5vh;
 }
 
 .nav li {
