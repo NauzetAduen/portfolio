@@ -8,16 +8,27 @@
 .info {
   background-color: grey;
   text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 8vmin;
 }
 .quote {
   font-family: "Rock Salt";
   text-align: end;
+  margin: 0;
 }
 .intro {
-  padding: 0 15vmin;
-  font-size: 30px;
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
 }
 .name {
   font-family: "Rock Salt";
   font-size: 36px;
+}
+.extraInfo {
+  font-size: 22px;
+  margin: 0;
+  text-align: left;
 }

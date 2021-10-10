@@ -1,0 +1,33 @@
+@use "Constants" as constants;
+
+.nav {
+  // background-color: gold;
+  position: fixed;
+  font-family: constants.$rockSalt;
+  width: 100%;
+}
+.nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 5vh;
+}
+
+.nav li {
+  //   padding: 20vmin;
+  display: inline;
+}
+.nav li:first-child {
+  margin-right: auto;
+}
+.nav li a {
+  padding: 20px;
+  text-decoration: none;
+}
+.nav li a:visited {
+  color: inherit;
+}
+.nav li a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}

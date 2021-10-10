@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import Hero from "../components/Hero";
-import Styles from "../styles/Home.module.scss";
+import styles from "../styles/Home.module.scss";
+import Nav from "../components/Nav";
+import Latest from "../components/Latest";
 
 export default function Home() {
   return (
@@ -11,10 +12,13 @@ export default function Home() {
         <meta name="description" content="Portfolio by Nauzet Hernández" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={Styles.fullHeight}>
+      <Nav />
+      <div className={styles.fullHeight}>
         <Hero />
       </div>
-      <div className={Styles.fullHeight}>cocaina</div>
+      <div className={styles.fullHeight}>
+        <Latest />
+      </div>
     </>
   );
 }
