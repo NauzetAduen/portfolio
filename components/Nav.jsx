@@ -1,6 +1,6 @@
-// import React from 'reacKt'
 import styles from "../styles/Nav.module.scss";
 import Link from "next/link";
+
 export default function Nav() {
   return (
     <nav className={styles.nav}>

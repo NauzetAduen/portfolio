@@ -24,3 +24,10 @@
   padding: 20px;
   text-decoration: none;
 }
+.nav li a:visited {
+  color: inherit;
+}
+.nav li a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
