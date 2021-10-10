@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import styles from "../styles/Home.module.scss";
 import Nav from "../components/Nav";
+import Latest from "../components/Latest";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <div className={styles.fullHeight}>
         <Hero />
       </div>
-      <div className={styles.fullHeight}>cocaina</div>
+      <div className={styles.fullHeight}>
+        <Latest />
+      </div>
     </>
   );
 }

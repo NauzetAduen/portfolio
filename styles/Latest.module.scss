@@ -1,0 +1,27 @@
+@use "Constants" as constants;
+.latest {
+  background-color: gold;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 2fr 3fr 3fr;
+  grid-gap: 20px;
+  padding: 0 30vmin;
+}
+
+.title {
+  padding: 0;
+  padding-top: 10vmin;
+  margin: 0;
+  text-align: center;
+  font-family: constants.$rockSalt;
+  font-size: 30px;
+}
+.creation {
+  display: grid;
+  background-color: red;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+.subcreation {
+  background-color: green;
+}
