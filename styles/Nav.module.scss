@@ -1,11 +1,24 @@
+@use "Constants" as constants;
+
 .nav {
   //   background-color: gold;
-  display: flex;
-  font-family: "Rock Salt";
+
+  font-family: constants.$rockSalt;
 }
+.nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
 .nav li {
+  //   padding: 20vmin;
   display: inline;
 }
+.nav li:first-child {
+  margin-right: auto;
+}
 .nav li a {
+  padding: 20px;
   text-decoration: none;
 }
