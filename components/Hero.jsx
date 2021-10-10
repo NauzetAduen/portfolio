@@ -1,5 +1,5 @@
-// import React from "react";
 import styles from "../styles/Hero.module.scss";
+
 export default function Hero() {
   return (
     <div className={styles.dividedDiv}>
@@ -14,7 +14,7 @@ export default function Hero() {
           Engineer from the Canary Islands. I’m focusing on the frontend side of
           things.
         </p>
-        <p>
+        <p className={styles.extraInfo}>
           Thanks for visiting my portfolio, where I share my ideas, goals and
           projects.
         </p>
