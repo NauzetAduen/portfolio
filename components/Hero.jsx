@@ -1,16 +1,16 @@
 // import React from "react";
-import Styles from "../styles/Hero.module.scss";
+import styles from "../styles/Hero.module.scss";
 export default function Hero() {
   return (
-    <div className={Styles.dividedDiv}>
-      <div className={Styles.info}>
-        <blockquote className={Styles.quote}>
+    <div className={styles.dividedDiv}>
+      <div className={styles.info}>
+        <blockquote className={styles.quote}>
           <p>“The journey of a thousand miles begins with a single step”</p>
           <p>– Lao-Tse</p>
         </blockquote>
 
-        <p className={Styles.intro}>
-          Hello, I’m <span className={Styles.name}>Nauzet</span>, a Software
+        <p className={styles.intro}>
+          Hello, I’m <span className={styles.name}>Nauzet</span>, a Software
           Engineer from the Canary Islands. I’m focusing on the frontend side of
           things.
         </p>
