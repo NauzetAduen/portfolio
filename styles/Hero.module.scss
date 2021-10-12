@@ -1,3 +1,4 @@
+@use "Constants" as constants;
 .dividedDiv {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -14,7 +15,7 @@
   padding: 0 8vmin;
 }
 .quote {
-  font-family: "Rock Salt";
+  font-family: constants.$primaryFont;
   text-align: end;
   margin: 0;
 }
@@ -24,8 +25,9 @@
   margin: 0;
 }
 .name {
-  font-family: "Rock Salt";
+  font-family: constants.$secondaryFont;
   font-size: 36px;
+  color: green;
 }
 .extraInfo {
   font-size: 22px;
