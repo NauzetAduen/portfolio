@@ -6,16 +6,16 @@ export default function Nav() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/">Nau</Link>
+          <Link href="/">NAU</Link>
         </li>
         <li>
-          <Link href="/me">me</Link>
+          <Link href="/me">ME</Link>
         </li>
         <li>
-          <Link href="/projects">projects</Link>
+          <Link href="/projects">PROJECTS</Link>
         </li>
         <li>
-          <Link href="/blog">blog</Link>
+          <Link href="/blog">BLOG</Link>
         </li>
       </ul>
     </nav>
