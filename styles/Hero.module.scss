@@ -11,26 +11,38 @@
   text-align: center;
   flex-direction: column;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0 8vmin;
 }
-.quote {
-  font-family: constants.$primaryFont;
-  text-align: end;
-  margin: 0;
-}
 .intro {
-  text-align: center;
-  font-size: 32px;
+  text-align: justify;
+  font-size: 2rem;
   margin: 0;
 }
 .name {
-  font-family: constants.$secondaryFont;
-  font-size: 36px;
-  color: green;
-}
-.extraInfo {
-  font-size: 22px;
+  padding: 0;
   margin: 0;
   text-align: left;
+  font-family: constants.$secondaryFont;
+  font-weight: 900;
+  font-size: 3.6rem;
+  letter-spacing: 0.5rem;
+  position: relative;
+  z-index: 2000;
+}
+.name::before {
+  content: "Nauzet Hernández";
+  color: red;
+  position: absolute;
+  // overflow: hidden;
+  // z-index: 1000;
+  // left: 0;
+}
+.name::after {
+  content: "Nauzet Hernandez";
+  // color: green;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1000;
+  left: 0;
 }
