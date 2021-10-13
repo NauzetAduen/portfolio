@@ -12,14 +12,16 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  padding: 0 8vmin;
+  padding: 0 14vmin;
 }
 .intro {
   text-align: justify;
   font-size: 2rem;
   margin: 0;
+  color: #ddd;
 }
 .name {
+  color: white;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -32,15 +34,11 @@
 }
 .name::before {
   content: "Nauzet Hernández";
-  color: red;
+  color: orangered;
   position: absolute;
-  // overflow: hidden;
-  // z-index: 1000;
-  // left: 0;
 }
 .name::after {
   content: "Nauzet Hernandez";
-  // color: green;
   position: absolute;
   overflow: hidden;
   z-index: 1000;
