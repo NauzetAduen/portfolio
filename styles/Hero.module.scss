@@ -1,4 +1,5 @@
 @use "Constants" as constants;
+$padding: 0 14vmin;
 .dividedDiv {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -8,11 +9,10 @@
 
 .info {
   background-color: grey;
-  text-align: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
-  padding: 0 14vmin;
+  padding: $padding;
 }
 .intro {
   text-align: justify;
@@ -21,6 +21,7 @@
   color: #ddd;
 }
 .name {
+  letter-spacing: -5px;
   color: white;
   padding: 0;
   margin: 0;
@@ -28,7 +29,7 @@
   font-family: constants.$secondaryFont;
   font-weight: 900;
   font-size: 3.6rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: -0.1rem;
   position: relative;
   z-index: 2000;
 }
@@ -38,7 +39,7 @@
   position: absolute;
 }
 .name::after {
-  content: "Nauzet Hernandez";
+  content: "Nauzet Hernández";
   position: absolute;
   overflow: hidden;
   z-index: 1000;
