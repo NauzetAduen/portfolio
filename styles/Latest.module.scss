@@ -1,6 +1,6 @@
 @use "Constants" as constants;
 .latest {
-  background-color: gold;
+  background-color: constants.$accentColor;
   height: 100%;
   display: grid;
   grid-template-rows: 2fr 3fr 3fr 0.5fr;
@@ -14,11 +14,12 @@
   margin: 0;
   text-align: center;
   font-family: constants.$secondaryFont;
-  font-size: 30px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #fff;
 }
 .creation {
   display: grid;
-  background-color: red;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
 }
