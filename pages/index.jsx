@@ -5,8 +5,20 @@ import Nav from "../components/Nav";
 import Latest from "../components/Latest";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [color, setColor] = useState("#000");
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > window.innerHeight * 2) {
+        setColor("white");
+      } else {
+        setColor("black");
+      }
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -14,7 +26,7 @@ export default function Home() {
         <meta name="description" content="Portfolio by Nauzet Hernández" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
+      <Nav color={color} />
       <div className={styles.fullHeight}>
         <Hero />
       </div>

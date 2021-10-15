@@ -2,10 +2,10 @@ import styles from "../styles/Nav.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Nav() {
+export default function Nav({ color }) {
   return (
     <nav className={styles.nav}>
-      <ul>
+      <ul style={{ color: color }}>
         <li>
           <Link href="/">
             <div className={styles.logoDiv}>
