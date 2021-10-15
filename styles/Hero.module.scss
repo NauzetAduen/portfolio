@@ -17,11 +17,11 @@ $padding: 0 14vmin;
   text-align: justify;
   font-size: 2.6rem;
   margin: 0;
-  color: #272727c7;
+  color: constants.$secondaryColor;
   font-weight: 500;
 }
 .name {
-  color: black;
+  color: constants.$primaryColor;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -34,7 +34,7 @@ $padding: 0 14vmin;
 }
 .name::before {
   content: "Nauzet Hernández";
-  color: #ff4500;
+  color: constants.$accentColor;
   position: absolute;
 }
 .name::after {
@@ -46,6 +46,7 @@ $padding: 0 14vmin;
 }
 
 .heroImage {
+  z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
