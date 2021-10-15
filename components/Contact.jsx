@@ -1,6 +1,7 @@
 import styles from "../styles/Contact.module.scss";
+import { memo } from "react";
 
-export default function Contact() {
+function Contact() {
   return (
     <div className={styles.contact}>
       <div>
@@ -18,3 +19,4 @@ export default function Contact() {
     </div>
   );
 }
+export default memo(Contact);

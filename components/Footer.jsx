@@ -1,6 +1,6 @@
 import styles from "../styles/Footer.module.scss";
-
-export default function Footer() {
+import { memo } from "react";
+const Footer = () => {
   return (
     <>
       <div className={styles.footer}>
@@ -23,4 +23,5 @@ export default function Footer() {
       </div>
     </>
   );
-}
+};
+export default memo(Footer);

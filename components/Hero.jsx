@@ -1,7 +1,8 @@
 import styles from "../styles/Hero.module.scss";
 import Image from "next/image";
 import checkout from "../public/Checkout.svg";
-export default function Hero() {
+import { memo } from "react";
+function Hero() {
   return (
     <div className={styles.dividedDiv}>
       <div className={styles.info}>
@@ -18,3 +19,4 @@ export default function Hero() {
     </div>
   );
 }
+export default memo(Hero);

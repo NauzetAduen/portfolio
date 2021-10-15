@@ -1,5 +1,7 @@
 import styles from "../styles/Latest.module.scss";
-export default function Latest() {
+import { memo } from "react";
+
+function Latest() {
   return (
     <div className={styles.latest}>
       <div>
@@ -39,3 +41,5 @@ export default function Latest() {
     </div>
   );
 }
+
+export default memo(Latest);
