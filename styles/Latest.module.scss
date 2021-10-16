@@ -29,12 +29,27 @@
   grid-gap: 2rem;
 }
 .creationTitle {
+  margin: 0;
+  font-size: 2rem;
+  color: constants.$terciaryColor;
   text-transform: uppercase;
-  text-decoration: underline;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
 }
 
 .subcreation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: green;
+}
+.subcreationText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.6rem;
+  color: constants.$terciaryColor;
 }
 .placeholder {
   height: 200px;
