@@ -18,21 +18,15 @@ function Latest() {
         <div className={styles.subcreationText}>
           <p className={styles.creationTitle}>Code Challenge for ADE</p>
           <p>
-            Lorem ipsum whatevah Error sintarsis, Lorem ipsum whatevah Error
-            sintarsis, Lorem ipsum whatevah Error sintarsis , Lorem ipsum
-            whatevah Error sintarsis, Lorem ipsum whatevah Error sintarsis. 123.
+            This challenge help me land a job as a Flutter developer in ADE.
           </p>
           <button className={stylesButton.button}>more</button>
         </div>
       </div>
       <div className={styles.creationReverse}>
         <div className={styles.subcreationText}>
-          <p className={styles.creationTitle}>Second Lorem Ipsun</p>
-          <p>
-            Lorem ipsum whatevah Error sintarsis, Lorem ipsum whatevah Error
-            sintarsis, Lorem ipsum whatevah Error sintarsis , Lorem ipsum
-            whatevah Error sintarsis, Lorem ipsum whatevah Error sintarsis. 123.
-          </p>
+          <p className={styles.creationTitle}>Portfolio</p>
+          <p>This project was made with NextJs as a learning experience.</p>
           <button className={stylesButton.button}>more</button>
         </div>
         <div className={styles.subcreation}>
