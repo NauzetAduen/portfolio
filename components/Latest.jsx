@@ -1,6 +1,7 @@
 import styles from "../styles/Latest.module.scss";
+import stylesButton from "../styles/Button.module.scss";
+
 import { memo } from "react";
-import Button from "./Button";
 
 function Latest() {
   return (
@@ -19,7 +20,7 @@ function Latest() {
             sintarsis, Lorem ipsum whatevah Error sintarsis , Lorem ipsum
             whatevah Error sintarsis, Lorem ipsum whatevah Error sintarsis. 123.
           </p>
-          <Button>more</Button>
+          <button className={stylesButton.button}>more</button>
         </div>
       </div>
       <div className={styles.creationReverse}>
@@ -30,14 +31,14 @@ function Latest() {
             sintarsis, Lorem ipsum whatevah Error sintarsis , Lorem ipsum
             whatevah Error sintarsis, Lorem ipsum whatevah Error sintarsis. 123.
           </p>
-          <Button>more</Button>
+          <button className={stylesButton.button}>more</button>
         </div>
         <div className={styles.subcreation}>
           <div className={styles.placeholder}>Image</div>
         </div>
       </div>
       <div className={styles.seeMore}>
-        <button>See more</button>
+        <button className={stylesButton.longButton}>See more</button>
       </div>
     </div>
   );

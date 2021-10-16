@@ -1,11 +1,12 @@
 @use "Constants" as constants;
 .button {
+  display: inline-block;
   background-color: constants.$accentColor;
   color: constants.$terciaryColor;
   font-weight: 700;
   border: none;
-  font-size: 1.6rem;
-  min-height: 50px;
+  font-size: 1.2rem;
+  //   min-height: 50px;
   width: min-content;
   padding: 0.7rem 2rem;
   border-radius: 0.2rem;
@@ -15,4 +16,21 @@
     background-color: constants.$terciaryColor;
     color: constants.$accentColor;
   }
+}
+.longButton {
+  background-color: constants.$terciaryColor;
+  color: constants.$accentColor;
+  font-weight: 700;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: constants.$accentColor;
+    color: constants.$terciaryColor;
+    text-transform: uppercase;
+  }
+  //   min-height: 50px;
 }
