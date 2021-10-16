@@ -9,19 +9,6 @@ import { useEffect, useState } from "react";
 import * as React from "react";
 
 export default function Home() {
-  const [color, setColor] = useState("#000");
-  useEffect(() => {
-    const handleScroll = () => {
-      window.pageYOffset > window.innerHeight * 2
-        ? setColor("white")
-        : setColor("black");
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       <Head>
@@ -29,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Portfolio by Nauzet Hernández" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav color={color} />
+      <Nav />
       <main>
         <div className={styles.fullHeight}>
           <Hero />

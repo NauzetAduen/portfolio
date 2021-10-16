@@ -1,8 +1,22 @@
 import styles from "../styles/Nav.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState, memo } from "react";
 
-export default function Nav({ color }) {
+function Nav() {
+  const [color, setColor] = useState("#000");
+  useEffect(() => {
+    const handleScroll = () => {
+      window.pageYOffset > window.innerHeight * 2
+        ? setColor("white")
+        : setColor("black");
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav className={styles.nav}>
       <ul style={{ color: color }}>
@@ -32,3 +46,4 @@ export default function Nav({ color }) {
     </nav>
   );
 }
+export default memo(Nav);
