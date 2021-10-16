@@ -1,0 +1,18 @@
+@use "Constants" as constants;
+.button {
+  background-color: constants.$accentColor;
+  color: constants.$terciaryColor;
+  font-weight: 700;
+  border: none;
+  font-size: 1.6rem;
+  min-height: 50px;
+  width: min-content;
+  padding: 0.7rem 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: constants.$terciaryColor;
+    color: constants.$accentColor;
+  }
+}
