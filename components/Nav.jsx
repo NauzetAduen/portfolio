@@ -7,7 +7,8 @@ function Nav() {
   const [color, setColor] = useState("#000");
   useEffect(() => {
     const handleScroll = () => {
-      window.pageYOffset > window.innerHeight * 2
+      window.pageYOffset > window.innerHeight &&
+      window.pageYOffset < window.innerHeight * 2
         ? setColor("white")
         : setColor("black");
     };
