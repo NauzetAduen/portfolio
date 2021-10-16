@@ -1,5 +1,7 @@
 import styles from "../styles/Latest.module.scss";
 import stylesButton from "../styles/Button.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import { memo } from "react";
 
@@ -38,7 +40,10 @@ function Latest() {
         </div>
       </div>
       <div className={styles.seeMore}>
-        <button className={stylesButton.longButton}>See more</button>
+        <button className={stylesButton.longButton}>
+          See more projects
+          <FontAwesomeIcon icon={faArrowRight} />
+        </button>
       </div>
     </div>
   );

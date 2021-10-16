@@ -24,12 +24,7 @@ function Nav() {
         <li>
           <Link href="/">
             <div className={styles.logoDiv}>
-              <Image
-                className={styles.imageLogo}
-                src="/favicon.ico"
-                width="50px"
-                height="50px"
-              />
+              <Image src="/favicon.ico" width="50px" height="50px" />
               <p className={styles.textLogo}>NAU</p>
             </div>
           </Link>

@@ -18,6 +18,10 @@
   }
 }
 .longButton {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: constants.$terciaryColor;
   color: constants.$accentColor;
   font-weight: 700;
@@ -30,7 +34,6 @@
   &:hover {
     background-color: constants.$accentColor;
     color: constants.$terciaryColor;
-    text-transform: uppercase;
   }
   //   min-height: 50px;
 }
