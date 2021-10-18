@@ -11,7 +11,7 @@ function Contact() {
         <div className={styles.welcomeText}>
           Thank you for coming home. You can learn something about me, my
           projects or check my blog to know what I'm doing. Take your time, and
-          contact me if you need a freelancer work, consultation or just help.
+          contact me if you need freelancer work, consultation or just help.
         </div>
         <div className={styles.personalCard}>
           <div className={styles.placeholder}>placeholder</div>
