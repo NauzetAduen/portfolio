@@ -1,9 +1,27 @@
+@use "Constants" as constants;
+
 .footer {
-  background-color: hotpink;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  background-color: constants.$terciaryColor;
+  color: constants.$secondaryColor;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 2rem;
+  height: 20vh;
 }
 
 .footerTitle {
   font-weight: 700;
+}
+.footerLink {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  color: constants.$secondaryColor;
+  &:visited {
+    color: constants.$secondaryColor;
+  }
 }
