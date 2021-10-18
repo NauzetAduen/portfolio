@@ -36,7 +36,7 @@ function Latest() {
       <div className={styles.seeMore}>
         <button className={stylesButton.longButton}>
           See more projects
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon icon={faArrowRight} size="1x" />
         </button>
       </div>
     </div>

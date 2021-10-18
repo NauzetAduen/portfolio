@@ -5,8 +5,11 @@ import Nav from "../components/Nav";
 import Latest from "../components/Latest";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { useEffect, useState } from "react";
 import * as React from "react";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export default function Home() {
   return (
