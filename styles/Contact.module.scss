@@ -1,7 +1,7 @@
 @use "Constants" as constants;
 
 .contact {
-  background-color: constants.$secondaryColor;
+  background-color: constants.$accentColor;
   height: 100vh;
   padding: 0 40vmin;
   margin: 0;
@@ -12,21 +12,29 @@
   margin: 0;
   text-align: center;
   font-family: constants.$secondaryFont;
-  font-size: 30px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: constants.$primaryColor;
 }
 .welcomeDiv {
   padding: 0;
   margin: 0;
   height: 80vh;
-  background-color: turquoise;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .welcomeText {
-  background-color: red;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
 }
 .personalCard {
-  background-color: violet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .placeholder {
   height: 200px;
