@@ -14,7 +14,7 @@ function Hero() {
         <p className={styles.intro}>Flutter Advocate.</p>
       </div>
       <div className={styles.heroImage}>
-        <Image src={checkout} width="1000vw" height="" />
+        <Image src={checkout} />
       </div>
     </div>
   );
