@@ -3,20 +3,25 @@
   background-color: constants.$primaryColor;
   height: 100%;
   display: grid;
-  grid-template-rows: 2fr 6fr 0.5fr;
+  grid-template-rows: 2fr 6fr 1fr;
   grid-gap: 5rem;
   padding: 0 20vmin;
 }
 .columns {
-  // background-color: red;
+  // width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 300px;
 }
 .svgColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .creationsColumn {
-  // background-color: yellow;
+  padding: 2rem;
   display: grid;
   gap: 4rem;
 }
@@ -56,15 +61,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
 }
 .subcreationText {
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: justify;
   font-size: 1.6rem;
   color: constants.$terciaryColor;
+  line-height: 2rem;
 }
 .placeholder {
   height: 200px;
@@ -75,11 +81,18 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
+  align-items: center;
+  // padding-bottom: 1rem;
 }
 .seeMore button {
+  height: min-content;
   padding: 5px 30px;
   margin: 0;
   text-transform: uppercase;
   font-family: constants.$secondaryFont;
+}
+.creationDesc {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  margin: 0;
 }
