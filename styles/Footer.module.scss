@@ -28,4 +28,7 @@
   &:visited {
     color: constants.$secondaryColor;
   }
+  &:hover {
+    -webkit-text-stroke: 1px black;
+  }
 }
