@@ -2,9 +2,11 @@
 
 .contact {
   background-color: constants.$accentColor;
-  height: 100vh;
-  padding: 0 40vmin;
+  height: 100%;
+  padding: 0 20vmin;
   margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
 }
 .title {
   padding: 0;
@@ -19,7 +21,6 @@
 .welcomeDiv {
   padding: 0;
   margin: 0;
-  height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -37,7 +38,7 @@
   justify-content: center;
 }
 .placeholder {
-  height: 200px;
-  width: 400px;
+  height: 300px;
+  width: 600px;
   background-color: greenyellow;
 }
