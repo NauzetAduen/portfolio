@@ -4,9 +4,7 @@ import { memo } from "react";
 function Contact() {
   return (
     <div className={styles.contact}>
-      <div>
-        <p className={styles.title}>Now that we're here</p>
-      </div>
+      <p className={styles.title}>Now that we're here</p>
       <div className={styles.welcomeDiv}>
         <div className={styles.welcomeText}>
           Thank you for coming home. You can learn something about me, my

@@ -11,9 +11,7 @@ import { memo } from "react";
 function Latest() {
   return (
     <div className={styles.latest}>
-      <div>
-        <p className={styles.title}>Latest creations</p>
-      </div>
+      <p className={styles.title}>Latest creations</p>
       <div className={styles.columns}>
         <div className={styles.svgColumn}>
           <Image src={WebsiteDesign} />
