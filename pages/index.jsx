@@ -27,7 +27,7 @@ export default function Home() {
         <div className={styles.fullHeight}>
           <Latest />
         </div>
-        <div className={styles.fullHeight}>
+        <div className={styles.halfHeight}>
           <Contact />
         </div>
         <div className={styles.thirdHeight}>
