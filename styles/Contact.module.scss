@@ -36,6 +36,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s;
+  &:hover {
+    transform: rotate(5deg);
+  }
 }
 .cardItems {
   height: 300px;
@@ -49,9 +53,11 @@
   border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
   border-left: 1px solid rgba($color: #fff, $alpha: 0.5);
   backdrop-filter: blur(5px);
+  // padding: 0 1rem;
 }
 .cardItems p {
-  transform: translateY(5rem);
+  font-size: 1.4rem;
+  transform: translateY(3rem);
   opacity: 0;
   transition: 0.3s;
 }
