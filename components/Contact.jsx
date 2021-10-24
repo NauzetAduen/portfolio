@@ -12,7 +12,12 @@ function Contact() {
           contact me if you need freelancer work, consultation or just help.
         </div>
         <div className={styles.personalCard}>
-          <div className={styles.placeholder}>placeholder</div>
+          <div className={styles.cardItems}>
+            <p>NAUZET HERNÁNDEZ</p>
+            <p>(+34) 685472601 </p>
+            <p>nauzet.aduen@gmail.com</p>
+            <p>Flutter developer at ADE</p>
+          </div>
         </div>
       </div>
     </div>
