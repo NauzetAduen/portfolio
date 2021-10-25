@@ -24,48 +24,70 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.welcomeText {
-  font-size: 1.4rem;
-  line-height: 3rem;
+.imageDiv {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  padding: 2vmin 3vmin;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  // gap: 1;
+}
+.input {
+  align-self: flex-start;
+  height: 2.6rem;
+  width: 18rem;
+}
+.textArea {
+  height: 15vh;
+  resize: none;
+  padding-top: 1vh;
+}
+.textArea::placeholder {
+  font-weight: 500;
+  font-size: 1.2rem;
   text-align: justify;
 }
-.personalCard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 1s;
+.input,
+.textArea {
+  border-radius: 0.5rem;
+  border: none;
+
+  padding-left: 1vh;
+}
+.input:focus,
+.textArea:focus {
+  outline: none !important;
+  border: none;
+  caret-color: constants.$accentColor;
+}
+.submit {
+  align-self: flex-end;
+  display: block;
+  height: 4rem;
+  background-color: constants.$primaryColor;
+  color: constants.$terciaryColor;
+  font-weight: 700;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
   &:hover {
-    transform: rotate(5deg);
+    background-color: constants.$terciaryColor;
+    color: constants.$accentColor;
+    border: 1px solid constants.$primaryColor;
   }
 }
-.cardItems {
-  padding: 0;
-  margin: 0;
-  height: 300px;
-  width: 600px;
-  background-color: rgba($color: #000000, $alpha: 0.1);
-  box-shadow: 20px 20px 50px rgba($color: #000000, $alpha: 0.5);
-  border-radius: 1rem;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
-  border-left: 1px solid rgba($color: #fff, $alpha: 0.5);
-  backdrop-filter: blur(5px);
-  // padding: 0 1rem;
-}
-.cardItems p {
-  font-size: 1.4rem;
-  transform: translateY(3rem);
-  opacity: 0;
-  transition: 0.3s;
+.label {
   padding: 0;
   margin: 0;
 }
-.cardItems:hover p {
-  transform: translateY(0rem);
-  opacity: 1;
+.labelDiv {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
 }

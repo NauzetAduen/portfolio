@@ -1,23 +1,35 @@
 import styles from "../styles/Contact.module.scss";
 import { memo } from "react";
+import WebsiteHosting from "../public/WebsiteHosting.svg";
+import Image from "next/image";
 
 function Contact() {
   return (
     <div className={styles.contact}>
       <p className={styles.title}>Now that we're here</p>
       <div className={styles.welcomeDiv}>
-        <div className={styles.welcomeText}>
-          Thank you for coming home. You can learn something about me, my
-          projects or check my blog to know what I'm doing. Take your time, and
-          contact me if you need freelancer work, consultation or just help.
-        </div>
-        <div className={styles.personalCard}>
-          <div className={styles.cardItems}>
-            <p>NAUZET HERNÁNDEZ</p>
-            <p>(+34) 685472601 </p>
-            <p>nauzet.aduen@gmail.com</p>
-            <p>Flutter developer at ADE</p>
+        <div className={styles.form}>
+          <div className={styles.labelDiv}>
+            <label htmlFor="emailInput" className={styles.label}>
+              email
+            </label>
+            <input className={styles.input} id="emailInput"></input>
           </div>
+          <div className={styles.labelDiv}>
+            <label htmlFor="messageTextarea" className={styles.label}>
+              message
+            </label>
+            <textarea
+              className={styles.textArea}
+              autoFocus
+              id="messageTextarea"
+              placeholder="Thank you for coming home. You can learn something about me, my projects or check my blog to know what I'm doing. Take your time, and contact me if you need freelancer work, consultation or just help."
+            ></textarea>
+          </div>
+          <button className={styles.submit}>Submit</button>
+        </div>
+        <div className={styles.imageDiv}>
+          <Image src={WebsiteHosting} />
         </div>
       </div>
     </div>
