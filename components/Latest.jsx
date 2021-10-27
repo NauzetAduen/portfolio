@@ -19,7 +19,7 @@ function Latest() {
         <div className={styles.creationsColumn}>
           <div className={styles.creation}>
             <div className={styles.subcreation}>
-              <div className={styles.placeholder}>Image</div>
+              <div className={styles.digit}>01</div>
             </div>
             <div className={styles.subcreationText}>
               <p className={styles.creationTitle}>Code Challenge for ADE</p>
@@ -28,15 +28,15 @@ function Latest() {
               </p>
             </div>
           </div>
-          <div className={styles.creationReverse}>
+          <div className={styles.creation}>
+            <div className={styles.subcreation}>
+              <div className={styles.digit}>02</div>
+            </div>
             <div className={styles.subcreationText}>
               <p className={styles.creationTitle}>Portfolio</p>
               <p className={styles.creationDesc}>
                 This project was made with NextJs as a learning experience.
               </p>
-            </div>
-            <div className={styles.subcreation}>
-              <div className={styles.placeholder}>Image</div>
             </div>
           </div>
         </div>
