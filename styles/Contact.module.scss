@@ -70,7 +70,7 @@
   align-self: flex-end;
   display: block;
   background-color: constants.$primaryColor;
-  color: constants.$terciaryColor;
+  color: constants.$white;
   font-weight: 700;
   border: none;
   font-size: 1.2rem;
@@ -79,7 +79,7 @@
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    background-color: constants.$terciaryColor;
+    background-color: constants.$white;
     color: constants.$accentColor;
     border: 1px solid constants.$primaryColor;
   }

@@ -1,7 +1,7 @@
 @use "Constants" as constants;
 
 .footer {
-  background-color: constants.$terciaryColor;
+  background-color: constants.$white;
   color: constants.$secondaryColor;
   display: flex;
   flex-direction: row;

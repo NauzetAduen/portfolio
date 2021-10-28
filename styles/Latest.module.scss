@@ -33,25 +33,18 @@
   font-family: constants.$secondaryFont;
   font-size: 2.8rem;
   font-weight: 700;
-  color: constants.$terciaryColor;
+  color: constants.$white;
 }
 .creation {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 2rem;
-  // &:hover {
-  // background-color: red;
-  // }
 }
-.creationReverse {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
-}
+
 .creationTitle {
   margin: 0;
   font-size: 2rem;
-  color: constants.$terciaryColor;
+  color: constants.$white;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.05rem;
@@ -69,13 +62,8 @@
   justify-content: center;
   text-align: justify;
   font-size: 1.6rem;
-  color: constants.$terciaryColor;
+  color: constants.$white;
   line-height: 2rem;
-}
-.placeholder {
-  height: 200px;
-  width: 200px;
-  background-color: greenyellow;
 }
 .seeMore {
   text-align: center;
