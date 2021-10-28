@@ -39,23 +39,24 @@
   align-self: flex-start;
   height: 2.6rem;
   width: 18rem;
+  padding-left: 1.4vmin;
 }
 .textArea {
   height: 15vh;
   resize: none;
-  padding-top: 1vh;
-}
-.textArea::placeholder {
-  font-weight: 500;
-  font-size: 1.2rem;
-  text-align: justify;
+  padding: 1.4vmin;
 }
 .input,
 .textArea {
   border-radius: 0.5rem;
   border: none;
-
-  padding-left: 1vh;
+  font-size: 1.2rem;
+  &::placeholder {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: constants.$primaryFont;
+  }
 }
 .input:focus,
 .textArea:focus {
@@ -64,15 +65,16 @@
   caret-color: constants.$accentColor;
 }
 .submit {
+  padding: 0;
+  margin: 0;
   align-self: flex-end;
   display: block;
-  height: 4rem;
   background-color: constants.$primaryColor;
   color: constants.$terciaryColor;
   font-weight: 700;
   border: none;
   font-size: 1.2rem;
-  padding: 0 2rem;
+  padding: 0.6rem 1.6rem;
   border-radius: 0.2rem;
   cursor: pointer;
   transition: all 0.3s;
