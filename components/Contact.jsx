@@ -1,7 +1,8 @@
-import styles from "../styles/Contact.module.scss";
-import { memo } from "react";
-import WebsiteHosting from "../public/WebsiteHosting.svg";
 import Image from "next/image";
+import { memo } from "react";
+
+import WebsiteHosting from "../public/WebsiteHosting.svg";
+import styles from "../styles/Contact.module.scss";
 
 function Contact() {
   return (
@@ -13,7 +14,11 @@ function Contact() {
             <label htmlFor="emailInput" className={styles.label}>
               email
             </label>
-            <input className={styles.input} id="emailInput"></input>
+            <input
+              className={styles.input}
+              placeholder="your@email.com"
+              id="emailInput"
+            ></input>
           </div>
           <div className={styles.labelDiv}>
             <label htmlFor="messageTextarea" className={styles.label}>
