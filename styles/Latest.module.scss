@@ -90,3 +90,10 @@
   letter-spacing: -0.5rem;
   color: constants.$accentColor;
 }
+
+.notHidden {
+  position: fixed;
+  left: 5rem;
+  top: 5rem;
+  z-index: 100;
+}
