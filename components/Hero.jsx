@@ -1,25 +1,22 @@
 import styles from "../styles/Hero.module.scss";
-
-export default function Hero() {
+import Image from "next/image";
+import checkout from "../public/Checkout.svg";
+import { memo } from "react";
+function Hero() {
   return (
     <div className={styles.dividedDiv}>
       <div className={styles.info}>
-        <blockquote className={styles.quote}>
-          <p>“The journey of a thousand miles begins with a single step”</p>
-          <p>– Lao-Tse</p>
-        </blockquote>
-
+        <p className={styles.name}>Nauzet Hernández</p>
         <p className={styles.intro}>
-          Hello, I’m <span className={styles.name}>Nauzet</span>, a Software
-          Engineer from the Canary Islands. I’m focusing on the frontend side of
-          things.
+          Software Engineer from the Canary Islands.
         </p>
-        <p className={styles.extraInfo}>
-          Thanks for visiting my portfolio, where I share my ideas, goals and
-          projects.
-        </p>
+        <p className={styles.intro}>Focused on the Frontend side of things. </p>
+        <p className={styles.intro}>Flutter Advocate.</p>
       </div>
-      <div></div>
+      <div className={styles.heroImage}>
+        <Image src={checkout} />
+      </div>
     </div>
   );
 }
+export default memo(Hero);

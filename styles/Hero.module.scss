@@ -1,3 +1,5 @@
+@use "Constants" as constants;
+$padding: 0 14vmin;
 .dividedDiv {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -6,29 +8,48 @@
 }
 
 .info {
-  background-color: grey;
-  text-align: center;
   flex-direction: column;
   display: flex;
-  justify-content: space-evenly;
-  padding: 0 8vmin;
-}
-.quote {
-  font-family: "Rock Salt";
-  text-align: end;
-  margin: 0;
+  justify-content: center;
+  padding: $padding;
 }
 .intro {
-  text-align: center;
-  font-size: 32px;
+  text-align: justify;
+  font-size: 2.2rem;
   margin: 0;
+  color: constants.$secondaryColor;
+  font-weight: 500;
 }
 .name {
-  font-family: "Rock Salt";
-  font-size: 36px;
-}
-.extraInfo {
-  font-size: 22px;
+  color: constants.$primaryColor;
+  padding: 0;
   margin: 0;
   text-align: left;
+  font-family: constants.$secondaryFont;
+  font-weight: 700;
+  font-size: 4.6rem;
+  letter-spacing: -0.1rem;
+  position: relative;
+  z-index: 2000;
+}
+.name::before {
+  content: "Nauzet Hernández";
+  color: constants.$accentColor;
+  position: absolute;
+}
+.name::after {
+  content: "Nauzet Hernandez";
+  position: absolute;
+  overflow: hidden;
+  z-index: 1000;
+  left: 0;
+}
+
+.heroImage {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }

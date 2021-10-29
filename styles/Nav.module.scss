@@ -1,20 +1,21 @@
 @use "Constants" as constants;
 
 .nav {
-  // background-color: gold;
   position: fixed;
-  font-family: constants.$rockSalt;
+  font-family: constants.$secondaryFont;
+  font-size: 28px;
   width: 100%;
+  font-weight: 700;
 }
 .nav ul {
   display: flex;
-  padding: 0;
+  padding: 2vmin;
   margin: 0;
   height: 5vh;
+  align-items: center;
 }
 
 .nav li {
-  //   padding: 20vmin;
   display: inline;
 }
 .nav li:first-child {
@@ -28,6 +29,24 @@
   color: inherit;
 }
 .nav li a:hover {
-  color: #ddd;
-  text-decoration: underline;
+  -webkit-text-stroke: 1px black;
 }
+.logoDiv {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.textLogo {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+// .textLogo:hover {
+// }
