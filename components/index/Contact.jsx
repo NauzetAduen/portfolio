@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { memo } from "react";
 
-import WebsiteHosting from "../public/WebsiteHosting.svg";
-import styles from "../styles/Contact.module.scss";
+import WebsiteHosting from "../../public/WebsiteHosting.svg";
+import styles from "../../styles/Contact.module.scss";
 
 function Contact() {
   return (

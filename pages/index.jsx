@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
+import Hero from "../components/index/Hero";
 import styles from "../styles/Home.module.scss";
 import Nav from "../components/Nav";
-import Latest from "../components/Latest";
-import Contact from "../components/Contact";
+import Latest from "../components/index/Latest";
+import Contact from "../components/index/Contact";
 import Footer from "../components/Footer";
 import * as React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
