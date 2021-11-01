@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Introduction from "../components/me/Introduction";
 import Nav from "../components/Nav";
 
 export default function me() {
@@ -11,7 +12,7 @@ export default function me() {
       </Head>
       <Nav />
       <main>
-        <p>me</p>
+        <Introduction />
       </main>
     </>
   );
