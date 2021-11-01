@@ -13,6 +13,8 @@ export default function me() {
       <Nav />
       <main>
         <Introduction />
+        <Introduction />
+        <Introduction />
       </main>
     </>
   );
