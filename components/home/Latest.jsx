@@ -1,12 +1,12 @@
-import styles from "../styles/Latest.module.scss";
-import stylesButton from "../styles/Button.module.scss";
+import styles from "../../styles/Latest.module.scss";
+import stylesButton from "../../styles/Button.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
-import WebsiteDesign from "../public/WebsiteDesign.svg";
-import CodeChallenge from "../assets/code_challenge.png";
-import FlutterPortfolio from "../assets/flutter_portfolio.png";
+import WebsiteDesign from "../../public/WebsiteDesign.svg";
+import CodeChallenge from "../../assets/code_challenge.png";
+import FlutterPortfolio from "../../assets/flutter_portfolio.png";
 
 import { memo, useState } from "react";
 

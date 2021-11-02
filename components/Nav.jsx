@@ -2,9 +2,11 @@ import styles from "../styles/Nav.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState, memo } from "react";
+import { useRouter } from "next/router";
 
 function Nav() {
   const [color, setColor] = useState("#000");
+  const route = useRouter().asPath;
   useEffect(() => {
     const handleScroll = () => {
       window.pageYOffset > window.innerHeight &&
@@ -29,13 +31,13 @@ function Nav() {
             </div>
           </Link>
         </li>
-        <li>
+        <li style={{ color: getColor(route, "/me") }}>
           <Link href="/me">ME</Link>
         </li>
-        <li>
+        <li style={{ color: getColor(route, "/projects") }}>
           <Link href="/projects">PROJECTS</Link>
         </li>
-        <li>
+        <li style={{ color: getColor(route, "/blog") }}>
           <Link href="/blog">BLOG</Link>
         </li>
       </ul>
@@ -43,3 +45,7 @@ function Nav() {
   );
 }
 export default memo(Nav);
+
+function getColor(route, endpoint) {
+  return route === endpoint ? "#a9a9a9" : null;
+}

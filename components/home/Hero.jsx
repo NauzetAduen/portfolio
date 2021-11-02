@@ -1,6 +1,6 @@
-import styles from "../styles/Hero.module.scss";
+import styles from "../../styles/Hero.module.scss";
 import Image from "next/image";
-import checkout from "../public/Checkout.svg";
+import checkout from "../../public/Checkout.svg";
 import { memo } from "react";
 function Hero() {
   return (
