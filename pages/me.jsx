@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Introduction from "../components/me/Introduction";
+import Personal from "../components/me/Personal";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export default function me() {
   return (
@@ -13,8 +15,8 @@ export default function me() {
       <Nav />
       <main>
         <Introduction />
-        <Introduction />
-        <Introduction />
+        <Personal />
+        <Footer />
       </main>
     </>
   );
