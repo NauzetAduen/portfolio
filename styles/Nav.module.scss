@@ -1,0 +1,52 @@
+@use "Constants" as constants;
+
+.nav {
+  position: fixed;
+  font-family: constants.$secondaryFont;
+  font-size: 28px;
+  width: 100%;
+  font-weight: 700;
+}
+.nav ul {
+  display: flex;
+  padding: 2vmin;
+  margin: 0;
+  height: 5vh;
+  align-items: center;
+}
+
+.nav li {
+  display: inline;
+}
+.nav li:first-child {
+  margin-right: auto;
+}
+.nav li a {
+  padding: 20px;
+  text-decoration: none;
+}
+.nav li a:visited {
+  color: inherit;
+}
+.nav li a:hover {
+  text-decoration: underline;
+}
+.logoDiv {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.textLogo {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+// .textLogo:hover {
+// }

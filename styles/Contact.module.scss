@@ -1,0 +1,97 @@
+@use "Constants" as constants;
+
+.contact {
+  background-color: constants.$accentColor;
+  height: 100%;
+  padding: 0 20vmin;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.title {
+  padding: 0;
+  padding-top: 10vmin;
+  margin: 0;
+  text-align: center;
+  font-family: constants.$secondaryFont;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: constants.$primaryColor;
+}
+.welcomeDiv {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.imageDiv {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  padding: 2vmin 3vmin;
+  display: flex;
+  flex-direction: column;
+  // gap: 1;
+}
+.input {
+  align-self: flex-start;
+  height: 2.6rem;
+  width: 18rem;
+  padding-left: 1.4vmin;
+}
+.textArea {
+  height: 15vh;
+  resize: none;
+  padding: 1.4vmin;
+}
+.input,
+.textArea {
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  &::placeholder {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: constants.$primaryFont;
+  }
+}
+.input:focus,
+.textArea:focus {
+  outline: none !important;
+  border: none;
+  caret-color: constants.$accentColor;
+}
+.submit {
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
+  display: block;
+  background-color: constants.$primaryColor;
+  border: 1px solid constants.$primaryColor;
+
+  color: constants.$white;
+  font-weight: 700;
+  // border: none;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: constants.$white;
+    color: constants.$accentColor;
+    // border: 1px solid constants.$primaryColor;
+  }
+}
+.label {
+  padding: 0;
+  margin: 0;
+}
+.labelDiv {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
