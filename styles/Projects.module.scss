@@ -1,0 +1,26 @@
+@use "Constants" as constants;
+
+.twoColumns {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.imageColumn {
+  display: flex;
+  align-self: center;
+  padding: 1rem;
+}
+.textColumn {
+  //   width: 50%;
+  display: flex;
+  align-self: center;
+  font-size: 2rem;
+  text-align: justify;
+  padding: 1rem;
+}
+.darkBackground {
+  background-color: constants.$primaryColor;
+}
+.lightText {
+  color: constants.$white;
+}
