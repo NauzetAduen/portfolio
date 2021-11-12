@@ -2,41 +2,24 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import { memo, useState } from "react";
+import { memo } from "react";
 
-import CodeChallenge from "../../assets/code_challenge.png";
-import FlutterPortfolio from "../../assets/flutter_portfolio.png";
 import WebsiteDesign from "../../public/WebsiteDesign.svg";
 import stylesButton from "../../styles/Button.module.scss";
 import styles from "../../styles/Latest.module.scss";
 
 function Latest() {
-  const [showImage, setShowImage] = useState(WebsiteDesign);
-  // const [show02, setShow02] = useState(false);
   return (
     <div className={styles.latest}>
       <p className={styles.title}>Latest creations</p>
       <div className={styles.columns}>
         <div className={styles.svgColumn}>
-          <Image src={showImage} />
+          <Image src={WebsiteDesign} />
         </div>
         <div className={styles.creationsColumn}>
-          <div
-            className={styles.creation}
-            onMouseEnter={() => {
-              setShowImage(CodeChallenge);
-            }}
-            onMouseLeave={() => {
-              setShowImage(WebsiteDesign);
-            }}
-          >
+          <div className={styles.creation}>
             <div className={styles.subcreation}>
               <div className={styles.digit}>01</div>
-              {/* {show01 && (
-                <div className={styles.notHidden}>
-                  <Image src={CodeChallenge} />
-                </div>
-              )} */}
             </div>
             <div className={styles.subcreationText}>
               <p className={styles.creationTitle}>Code Challenge for ADE</p>
@@ -45,15 +28,7 @@ function Latest() {
               </p>
             </div>
           </div>
-          <div
-            className={styles.creation}
-            onMouseEnter={() => {
-              setShowImage(FlutterPortfolio);
-            }}
-            onMouseLeave={() => {
-              setShowImage(WebsiteDesign);
-            }}
-          >
+          <div className={styles.creation}>
             <div className={styles.subcreation}>
               <div className={styles.digit}>02</div>
               {/* {show02 && <div className={styles.notHidden}>02</div>} */}
