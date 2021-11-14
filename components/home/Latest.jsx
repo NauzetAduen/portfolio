@@ -31,12 +31,6 @@ function Latest() {
           <div className={styles.creation}>
             <div className={styles.subcreation}>
               <div className={styles.digit}>02</div>
-              {/* {show02 && <div className={styles.notHidden}>02</div>} */}
-              {/* {show02 && (
-                <div className={styles.notHidden}>
-                  <Image src={FlutterPortfolio} />
-                </div>
-              )} */}
             </div>
             <div className={styles.subcreationText}>
               <p className={styles.creationTitle}>Portfolio</p>

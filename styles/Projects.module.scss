@@ -16,15 +16,16 @@
 }
 .textColumn {
   //   width: 50%;
-  display: flex;
+  display: grid;
   align-self: center;
   font-size: 2rem;
   text-align: justify;
-  padding: 1rem;
+  padding: 2rem;
+  & a {
+    text-decoration: none;
+  }
 }
-.darkBackground {
-  background-color: constants.$primaryColor;
-}
+
 .lightText {
   color: constants.$white;
 }
@@ -33,13 +34,12 @@
   background-color: constants.$accentColor;
 }
 .title {
-  // padding-top: 10vh;
-  color: orange;
+  color: constants.$accentColor;
   font-weight: 700;
   font-size: 4rem;
+  text-align: center;
 }
 .project {
-  // padding-top: 8rem;
   padding: 3vmin 6vmin;
   display: grid;
   flex-direction: column;
@@ -48,4 +48,47 @@
 }
 .darkText {
   color: constants.$white;
+}
+
+.button {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: constants.$accentColor;
+  color: constants.$white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem constants.$grey;
+  transition: 0.3s ease;
+  border: none;
+
+  &:hover {
+    color: constants.$primaryColor;
+  }
+}
+.darkButton {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: constants.$primaryColor;
+  color: constants.$white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.2rem constants.$primaryColor;
+  transition: 0.3s ease;
+  &:hover {
+    color: constants.$accentColor;
+  }
+}
+.darkBackground {
+  background-color: constants.$primaryColor;
 }
