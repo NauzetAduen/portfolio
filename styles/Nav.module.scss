@@ -22,15 +22,20 @@
   margin-right: auto;
 }
 .nav li a {
+  display: inline-block;
   padding: 20px;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-10px);
+    text-decoration: underline;
+  }
 }
 .nav li a:visited {
   color: inherit;
 }
-.nav li a:hover {
-  -webkit-text-stroke: 1px black;
-}
+
 .logoDiv {
   cursor: pointer;
   padding: 0;
@@ -48,5 +53,3 @@
   padding: 0;
   padding-left: 10px;
 }
-// .textLogo:hover {
-// }
