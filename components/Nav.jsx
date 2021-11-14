@@ -11,8 +11,8 @@ function Nav() {
     const handleScroll = () => {
       window.pageYOffset > window.innerHeight &&
       window.pageYOffset < window.innerHeight * 2
-        ? setColor("white")
-        : setColor("black");
+        ? setColor("#FFF")
+        : setColor("#000");
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,18 +27,18 @@ function Nav() {
           <Link href="/">
             <div className={styles.logoDiv}>
               <Image src="/favicon.ico" width="50px" height="50px" />
-              <p className={styles.textLogo}>NAU</p>
+              <p className={styles.textLogo}>nau.</p>
             </div>
           </Link>
         </li>
         <li style={{ color: getColor(route, "/me") }}>
-          <Link href="/me">ME</Link>
+          <Link href="/me">me</Link>
         </li>
         <li style={{ color: getColor(route, "/projects") }}>
-          <Link href="/projects">PROJECTS</Link>
+          <Link href="/projects">projects</Link>
         </li>
         <li style={{ color: getColor(route, "/blog") }}>
-          <Link href="/blog">BLOG</Link>
+          <Link href="/blog">blog</Link>
         </li>
       </ul>
     </nav>
