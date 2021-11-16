@@ -4,6 +4,9 @@ import Personal from "../components/me/Personal";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
+import generalStyles from "../styles/Home.module.scss";
+import styles from "../styles/Blog.module.scss";
+
 export default function blog() {
   return (
     <>
@@ -13,7 +16,11 @@ export default function blog() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <main>Blog</main>
+      <main>
+        <div className={generalStyles.fullHeight}>
+          <div className={styles.centeredDiv}>Work in progress</div>
+        </div>
+      </main>
     </>
   );
 }
