@@ -33,12 +33,44 @@
 .orangeBackground {
   background-color: constants.$accentColor;
 }
+
 .title {
   color: constants.$accentColor;
   font-weight: 700;
   font-size: 4rem;
   text-align: center;
+  width: auto;
+  margin: 0 auto;
+
+  &::after {
+    width: 100%;
+    display: block;
+    height: 2rem;
+    margin-top: -1.5rem;
+    background-image: url("/underline.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
 }
+.reverseTitle {
+  color: constants.$white;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+
+  &::after {
+    width: 100%;
+    display: block;
+    height: 2rem;
+    margin-top: -1.5rem;
+    background-image: url("/underline_white.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
 .project {
   padding: 3vmin 6vmin;
   display: grid;
@@ -91,4 +123,8 @@
 }
 .darkBackground {
   background-color: constants.$primaryColor;
+}
+.underlineWhite {
+  background-image: url("/underline_white.svg");
+  background-repeat: no-repeat;
 }

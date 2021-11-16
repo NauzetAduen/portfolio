@@ -7,3 +7,20 @@
 .halfHeight {
   height: 70vh;
 }
+
+.underscore {
+  border: solid 2px red;
+  width: auto;
+
+  &::after {
+    width: 100%;
+    display: block;
+    height: 1rem;
+    margin-top: -1rem;
+    background-image: url("/underline.svg");
+    background-repeat: no-repeat;
+    // background-s ize: cover;
+
+    content: "";
+  }
+}
