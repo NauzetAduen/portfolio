@@ -69,9 +69,7 @@ export default function projects() {
           className={generalStyles.fullHeight + " " + styles.orangeBackground}
         >
           <div className={styles.project}>
-            <span className={styles.title + " " + styles.darkText}>
-              HikingApp - TFG
-            </span>
+            <span className={styles.reverseTitle}>HikingApp - TFG</span>
             <div className={styles.twoColumns}>
               <div className={styles.imageColumn}>
                 <Image src={HikingApp} />

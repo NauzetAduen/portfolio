@@ -1,4 +1,5 @@
 import styles from "../../styles/Hero.module.scss";
+import generalStyles from "../../styles/Home.module.scss";
 import Image from "next/image";
 import checkout from "../../public/Checkout.svg";
 import { memo } from "react";
@@ -11,7 +12,9 @@ function Hero() {
           Software Engineer from the Canary Islands.
         </p>
         <p className={styles.intro}>Focused on the Frontend side of things. </p>
-        <p className={styles.intro}>Flutter Advocate.</p>
+        <p className={styles.intro + " " + generalStyles.underscore}>
+          Flutter Advocate.
+        </p>
       </div>
       <div className={styles.heroImage}>
         <Image src={checkout} />

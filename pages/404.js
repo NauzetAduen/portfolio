@@ -1,13 +1,10 @@
 import Head from "next/head";
-import Introduction from "../components/me/Introduction";
-import Personal from "../components/me/Personal";
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 
 import generalStyles from "../styles/Home.module.scss";
-import styles from "../styles/Blog.module.scss";
+import styles from "../styles/404.module.scss";
 
-export default function blog() {
+export default function index() {
   return (
     <>
       <Head>
@@ -18,7 +15,10 @@ export default function blog() {
       <Nav />
       <main>
         <div className={generalStyles.fullHeight}>
-          <div className={styles.centeredDiv}>Work in progress</div>
+          <div className={styles.twoRows}>
+            <div className={styles.oops}>OOOOPS!</div>
+            <div className={styles.number}>404</div>
+          </div>
         </div>
       </main>
     </>
