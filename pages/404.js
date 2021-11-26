@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
+import Image from "next/image";
 
 import generalStyles from "../styles/Home.module.scss";
 import styles from "../styles/404.module.scss";
+import lost from "../public/Lost.svg";
 
 export default function index() {
   return (
@@ -16,8 +18,8 @@ export default function index() {
       <main>
         <div className={generalStyles.fullHeight}>
           <div className={styles.twoRows}>
-            <div className={styles.oops}>OOOOPS!</div>
-            <div className={styles.number}>404</div>
+            <Image src={lost} />
+            <div className={styles.lost}>did you got lost?</div>
           </div>
         </div>
       </main>

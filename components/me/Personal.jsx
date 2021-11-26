@@ -31,7 +31,7 @@ export default function Personal() {
               href="https://www.chess.com/member/nowset"
             >
               chess
-            </a>{" "}
+            </a>
             , and Im trying to buy a lefthanded guitar to learn piano. I also
             swin as a workout method.
           </p>
