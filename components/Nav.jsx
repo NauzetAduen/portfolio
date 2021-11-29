@@ -1,8 +1,9 @@
-import styles from "../styles/Nav.module.scss";
-import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState, memo } from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { memo, useEffect, useState } from "react";
+
+import styles from "../styles/Nav.module.scss";
 
 function Nav() {
   const [color, setColor] = useState("#000");
@@ -31,13 +32,13 @@ function Nav() {
             </div>
           </Link>
         </li>
-        <li style={{ color: getColor(route, "/me") }}>
+        <li>
           <Link href="/me">me</Link>
         </li>
-        <li style={{ color: getColor(route, "/projects") }}>
+        <li>
           <Link href="/projects">projects</Link>
         </li>
-        <li style={{ color: getColor(route, "/blog") }}>
+        <li>
           <Link href="/blog">blog</Link>
         </li>
       </ul>
@@ -45,7 +46,3 @@ function Nav() {
   );
 }
 export default memo(Nav);
-
-function getColor(route, endpoint) {
-  return route === endpoint ? "#a9a9a9" : null;
-}
