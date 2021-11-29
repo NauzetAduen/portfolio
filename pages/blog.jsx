@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Introduction from "../components/me/Introduction";
-import Personal from "../components/me/Personal";
+import Image from "next/image";
+import Link from "next/link";
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-
 import generalStyles from "../styles/Home.module.scss";
+import WIP from "../public/Logodesign.svg";
+
 import styles from "../styles/Blog.module.scss";
 
 export default function blog() {
@@ -18,7 +18,15 @@ export default function blog() {
       <Nav />
       <main>
         <div className={generalStyles.fullHeight}>
-          <div className={styles.centeredDiv}>Work in progress</div>
+          <div className={styles.twoRows}>
+            <Image src={WIP} />
+            <div className={styles.wip}>
+              <span className={styles.text}>Work in progress</span>
+              <button className={styles.buttonHome}>
+                <Link href="/">Home</Link>
+              </button>
+            </div>
+          </div>
         </div>
       </main>
     </>
