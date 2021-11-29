@@ -32,18 +32,21 @@ $padding: 0 14vmin;
   letter-spacing: -0.1rem;
   position: relative;
   z-index: 2000;
-}
-.name::before {
-  content: "Nauzet Hernández";
-  color: constants.$accentColor;
-  position: absolute;
-}
-.name::after {
-  content: "Nauzet Hernandez";
-  position: absolute;
-  overflow: hidden;
-  z-index: 1000;
-  left: 0;
+  &::before {
+    content: "Nauzet Hernández";
+    color: constants.$accentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    content: "Nauzet Hernandez";
+    position: absolute;
+    overflow: hidden;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+  }
 }
 
 .heroImage {
