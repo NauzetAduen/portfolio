@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "../components/Nav";
-import generalStyles from "../styles/Home.module.scss";
-import WIP from "../public/Logodesign.svg";
 
+import Nav from "../components/shared/Nav";
+import WIP from "../public/Logodesign.svg";
 import styles from "../styles/Blog.module.scss";
+import generalStyles from "../styles/Home.module.scss";
 
 export default function blog() {
   return (

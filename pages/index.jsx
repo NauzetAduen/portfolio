@@ -1,14 +1,17 @@
-import Head from "next/head";
-import Hero from "../components/home/Hero";
-import styles from "../styles/Home.module.scss";
-import Nav from "../components/Nav";
-import Latest from "../components/home/Latest";
-import Contact from "../components/home/Contact";
-import Footer from "../components/Footer";
-import * as React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Head from "next/head";
+import * as React from "react";
+
+import Contact from "../components/home/Contact";
+import Hero from "../components/home/Hero";
+import Latest from "../components/home/Latest";
+import Footer from "../components/shared/Footer";
+import Nav from "../components/shared/Nav";
+import styles from "../styles/Home.module.scss";
+
 config.autoAddCss = false;
 
 export default function Home() {

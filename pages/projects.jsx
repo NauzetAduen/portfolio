@@ -1,18 +1,21 @@
-import Head from "next/head";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import generalStyles from "../styles/Home.module.scss";
-import styles from "../styles/Projects.module.scss";
-import CodeChallenge from "../assets/code_challenge.png";
-import Diabetiary from "../assets/diabetiary.png";
-import HikingApp from "../assets/hiking_app.png";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { github } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { github } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
+import Image from "next/image";
+
+import CodeChallenge from "../assets/code_challenge.png";
+import Diabetiary from "../assets/diabetiary.png";
+import HikingApp from "../assets/hiking_app.png";
+import Footer from "../components/shared/Footer";
+import Nav from "../components/shared/Nav";
+import generalStyles from "../styles/Home.module.scss";
+import styles from "../styles/Projects.module.scss";
+
 config.autoAddCss = false;
 
 export default function projects() {

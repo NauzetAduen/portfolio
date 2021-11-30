@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { memo, useEffect, useState } from "react";
 
-import styles from "../styles/Nav.module.scss";
+import styles from "../../styles/Nav.module.scss";
 
 function Nav() {
   const [color, setColor] = useState("#000");

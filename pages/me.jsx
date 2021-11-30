@@ -1,8 +1,9 @@
 import Head from "next/head";
+
 import Introduction from "../components/me/Introduction";
 import Personal from "../components/me/Personal";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Footer from "../components/shared/Footer";
+import Nav from "../components/shared/Nav";
 
 export default function me() {
   return (
