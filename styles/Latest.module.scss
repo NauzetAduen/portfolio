@@ -1,11 +1,14 @@
 @use "Constants" as constants;
 .latest {
   background-color: constants.$primaryColor;
-  height: 100%;
+  // height: 100%;
+  // height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: grid;
   grid-template-rows: 2fr 6fr 1fr;
   grid-gap: 5rem;
-  padding: 0 20vmin;
+  padding: constants.$padding;
 }
 .columns {
   // width: 100%;
