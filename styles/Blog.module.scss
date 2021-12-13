@@ -47,6 +47,7 @@
   transition: all 0.3s;
   &:hover {
     border: 1px solid constants.$primaryColor;
+    transform: rotate(-3deg);
 
     background-color: constants.$primaryColor;
     color: constants.$white;

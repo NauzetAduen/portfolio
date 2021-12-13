@@ -38,6 +38,7 @@
   transition: all 0.3s;
   &:hover {
     border: 1px solid constants.$accentColor;
+    transform: rotate(-3deg);
 
     background-color: constants.$accentColor;
     color: constants.$white;
