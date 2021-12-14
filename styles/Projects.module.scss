@@ -105,6 +105,7 @@
   border: none;
 
   &:hover {
+    transform: rotate(-3deg);
     color: constants.$primaryColor;
   }
 }
@@ -125,6 +126,7 @@
   transition: 0.3s ease;
   &:hover {
     color: constants.$accentColor;
+    transform: rotate(-3deg);
   }
 }
 .darkBackground {
