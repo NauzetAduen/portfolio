@@ -1,5 +1,5 @@
 @use "Constants" as constants;
-
+@import "include-media";
 .twoColumns {
   height: auto;
 
@@ -24,6 +24,9 @@
   padding: 2rem;
   & a {
     text-decoration: none;
+  }
+  @include media("<=1280px", ">phone") {
+    font-size: 1.4rem;
   }
 }
 

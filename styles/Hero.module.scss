@@ -1,4 +1,6 @@
 @use "Constants" as constants;
+@import "include-media";
+
 .dividedDiv {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -21,6 +23,9 @@
   margin: 0;
   color: constants.$secondaryColor;
   font-weight: 500;
+  @include media("<=1280px", ">phone") {
+    font-size: 1.8rem;
+  }
 }
 .name {
   color: constants.$primaryColor;
@@ -47,6 +52,10 @@
     z-index: 1000;
     left: 0;
     top: 0;
+  }
+  //tablet
+  @include media("<=1280px", ">phone") {
+    font-size: 3rem;
   }
 }
 
