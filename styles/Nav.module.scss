@@ -59,13 +59,38 @@
 }
 
 .mobileNav {
+  position: absolute;
+  right: 15px;
+  top: 5px;
   display: none;
+  &:first-child {
+    position: absolute;
+
+    align-self: flex-end;
+  }
+
+  // padding-right: 1rem;
+
   @include media("<=600px") {
     display: flex;
-    background-color: red;
     flex-direction: column;
-    align-items: flex-end;
-    padding-right: 1rem;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+    // align-self: center;
+    // align-items: center;
+
     cursor: pointer;
   }
+}
+.linkListMobile {
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    // deco
+  }
+}
+.icon {
+  align-self: flex-end;
 }

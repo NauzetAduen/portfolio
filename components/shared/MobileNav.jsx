@@ -9,24 +9,28 @@ export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.mobileNav}>
-      {isOpen ? (
-        <FontAwesomeIcon
-          icon={faTimes}
-          size="2x"
-          onClick={() => setIsOpen(false)}
-        />
-      ) : (
-        <FontAwesomeIcon
-          icon={faBars}
-          size="2x"
-          onClick={() => setIsOpen(true)}
-        />
-      )}
+      <div className={styles.icon}>
+        {isOpen ? (
+          <FontAwesomeIcon
+            icon={faTimes}
+            size="2x"
+            onClick={() => setIsOpen(false)}
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon={faBars}
+            size="2x"
+            onClick={() => setIsOpen(true)}
+          />
+        )}
+      </div>
 
-      {
-        isOpen && (
-          // <nav className={styles.nav}>
+      {isOpen && (
+        <nav className={styles.linkListMobile}>
           <ul style={{ color: "white" }}>
+            <li>
+              <Link href="/">home</Link>
+            </li>
             <li>
               <Link href="/me">me</Link>
             </li>
@@ -37,9 +41,8 @@ export default function MobileNav() {
               <Link href="/blog">blog</Link>
             </li>
           </ul>
-        )
-        // </nav>
-      }
+        </nav>
+      )}
     </div>
   );
 }
