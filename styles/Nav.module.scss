@@ -1,5 +1,5 @@
 @use "Constants" as constants;
-
+@import "include-media";
 .nav {
   position: fixed;
   font-family: constants.$secondaryFont;
@@ -7,6 +7,9 @@
   width: 100%;
   font-weight: 700;
   z-index: 200;
+  @include media("<=600px") {
+    display: none;
+  }
 }
 .nav ul {
   display: flex;
@@ -53,4 +56,16 @@
   margin: 0;
   padding: 0;
   padding-left: 10px;
+}
+
+.mobileNav {
+  display: none;
+  @include media("<=600px") {
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
 }
