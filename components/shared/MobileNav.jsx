@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useState, useRef } from "react";
 import styles from "../../styles/Nav.module.scss";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef();
   return (
     <div className={styles.mobileNav}>
       <div className={styles.visible}>
@@ -33,25 +34,30 @@ export default function MobileNav() {
           )}
         </div>
       </div>
-
-      {isOpen && (
-        <nav className={styles.linkListMobile}>
-          <ul style={{ color: "white" }}>
-            <li>
-              <Link href="/">home</Link>
-            </li>
-            <li>
-              <Link href="/me">me</Link>
-            </li>
-            <li>
-              <Link href="/projects">projects</Link>
-            </li>
-            <li>
-              <Link href="/blog">blog</Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+      <nav
+        className={styles.linkListMobile}
+        ref={navRef}
+        style={
+          isOpen
+            ? { height: navRef.current.scrollHeight + "px" }
+            : { height: "0px" }
+        }
+      >
+        <ul style={{ color: "white" }}>
+          <li>
+            <Link href="/">home</Link>
+          </li>
+          <li>
+            <Link href="/me">me</Link>
+          </li>
+          <li>
+            <Link href="/projects">projects</Link>
+          </li>
+          <li>
+            <Link href="/blog">blog</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
