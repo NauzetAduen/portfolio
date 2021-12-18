@@ -59,14 +59,12 @@
 }
 
 .mobileNav {
-  border-radius: 1rem;
   z-index: 5000;
   position: fixed;
   width: auto;
   background-color: constants.$white;
-  right: 15px;
-  left: 15px;
-  top: 5px;
+  right: 0;
+  left: 0;
   display: none;
   text-align: end;
   font-size: 28px;
