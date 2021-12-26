@@ -5,9 +5,23 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 20px;
-  // height: 100%;
   height: auto;
   min-height: 100vh;
+  @include media("<=768px") {
+    padding: 5rem 0 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    min-height: auto;
+  }
+  @include media("<=992px", ">768px") {
+    // background-color: red;
+    grid-template-columns: 2fr 1fr;
+    height: auto;
+    min-height: 50vh;
+    //TODO
+  }
 }
 
 .info {
@@ -23,8 +37,15 @@
   margin: 0;
   color: constants.$secondaryColor;
   font-weight: 500;
-  @include media("<=1280px", ">phone") {
-    font-size: 1.8rem;
+  @include media("<=768px") {
+    //mobile
+    font-size: 1rem;
+    text-align: left;
+  }
+  @include media("<=992px", ">768px") {
+    //tablet
+    font-size: 1.4rem;
+    text-align: left;
   }
 }
 .name {
@@ -66,4 +87,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  @include media("<768px") {
+    display: none;
+    //TODO
+  }
 }
