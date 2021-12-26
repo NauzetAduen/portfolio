@@ -29,7 +29,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  @include media("<=1280px", ">phone") {
+  @include media("<=992px", ">phone") {
     display: flex;
   }
 }
