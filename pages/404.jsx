@@ -23,7 +23,7 @@ export default function index() {
             <div className={styles.lost}>
               <span className={styles.fourHundred}>400+4</span>
               <span className={styles.backHome}>
-                Resource not found, lets go back home.
+                Resource not found, let's go back home.
               </span>
 
               <button className={styles.buttonHome}>
