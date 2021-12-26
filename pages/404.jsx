@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Nav from "../components/shared/Nav";
-import WIP from "../public/Logodesign.svg";
-import styles from "../styles/Blog.module.scss";
+import lost from "../public/Lost.svg";
+import styles from "../styles/404.module.scss";
 import generalStyles from "../styles/Home.module.scss";
 
-export default function blog() {
+export default function index() {
   return (
     <>
       <Head>
@@ -19,9 +19,13 @@ export default function blog() {
       <main>
         <div className={generalStyles.fullHeight}>
           <div className={styles.twoRows}>
-            <Image src={WIP} />
-            <div className={styles.wip}>
-              <span className={styles.text}>Work in progress</span>
+            <Image src={lost} />
+            <div className={styles.lost}>
+              <span className={styles.fourHundred}>400+4</span>
+              <span className={styles.backHome}>
+                Resource not found, let's go back home.
+              </span>
+
               <button className={styles.buttonHome}>
                 <Link href="/">Home</Link>
               </button>

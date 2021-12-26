@@ -13,8 +13,8 @@ export default function Personal() {
           </div>
           <p className={styles.text}>
             Did you know I have broken a lot of bones? Once I broke both of my
-            shoulders, it was fantastic. I also have diabetes mellitus type 1.
-            Despise all of this, I take care of myself.
+            shoulders, it was fantastic. I also have type 1 diabetes. Despise
+            all of this, I take care of myself.
           </p>
         </div>
         <div className={styles.group}>
@@ -31,7 +31,7 @@ export default function Personal() {
               href="https://www.chess.com/member/nowset"
             >
               chess
-            </a>{" "}
+            </a>
             , and Im trying to buy a lefthanded guitar to learn piano. I also
             swin as a workout method.
           </p>

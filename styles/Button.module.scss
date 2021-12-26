@@ -32,6 +32,7 @@
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
+    transform: rotate(-3deg);
     background-color: constants.$accentColor;
     color: constants.$white;
   }

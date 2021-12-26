@@ -1,10 +1,27 @@
 @use "Constants" as constants;
-$padding: 0 14vmin;
+@import "include-media";
+
 .dividedDiv {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 20px;
-  height: 100%;
+  height: auto;
+  min-height: 100vh;
+  @include media("<=768px") {
+    padding: 5rem 0 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    min-height: auto;
+  }
+  @include media("<=992px", ">768px") {
+    // background-color: red;
+    grid-template-columns: 2fr 1fr;
+    height: auto;
+    min-height: 50vh;
+    //TODO
+  }
 }
 
 .info {
@@ -12,7 +29,7 @@ $padding: 0 14vmin;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: $padding;
+  padding: constants.$padding;
 }
 .intro {
   text-align: justify;
@@ -20,6 +37,16 @@ $padding: 0 14vmin;
   margin: 0;
   color: constants.$secondaryColor;
   font-weight: 500;
+  @include media("<=768px") {
+    //mobile
+    font-size: 1rem;
+    text-align: left;
+  }
+  @include media("<=992px", ">768px") {
+    //tablet
+    font-size: 1.4rem;
+    text-align: left;
+  }
 }
 .name {
   color: constants.$primaryColor;
@@ -32,18 +59,25 @@ $padding: 0 14vmin;
   letter-spacing: -0.1rem;
   position: relative;
   z-index: 2000;
-}
-.name::before {
-  content: "Nauzet Hernández";
-  color: constants.$accentColor;
-  position: absolute;
-}
-.name::after {
-  content: "Nauzet Hernandez";
-  position: absolute;
-  overflow: hidden;
-  z-index: 1000;
-  left: 0;
+  &::before {
+    content: "Nauzet Hernández";
+    color: constants.$accentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    content: "Nauzet Hernandez";
+    position: absolute;
+    overflow: hidden;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+  }
+  //tablet
+  @include media("<=992px") {
+    font-size: 3rem;
+  }
 }
 
 .heroImage {
@@ -53,4 +87,8 @@ $padding: 0 14vmin;
   justify-content: center;
   width: 100%;
   height: 100%;
+  @include media("<768px") {
+    display: none;
+    //TODO
+  }
 }

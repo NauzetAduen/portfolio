@@ -1,9 +1,14 @@
 @use "Constants" as constants;
-
+@import "include-media";
 .twoColumns {
-  height: 100%;
+  height: auto;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include media("<=992px") {
+    display: block;
+  }
 }
 .imageColumn {
   display: flex;
@@ -13,9 +18,13 @@
   &:hover {
     transform: scale(1.05);
   }
+  @include media("<=992px") {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .textColumn {
-  //   width: 50%;
   display: grid;
   align-self: center;
   font-size: 2rem;
@@ -23,6 +32,9 @@
   padding: 2rem;
   & a {
     text-decoration: none;
+  }
+  @include media("<=992px") {
+    font-size: 1.4rem;
   }
 }
 
@@ -51,6 +63,16 @@
     background-repeat: no-repeat;
     content: "";
   }
+  @include media("<=992px") {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  @include media("<=768px") {
+    font-size: 2rem;
+    &::after {
+      margin-top: -1rem;
+    }
+  }
 }
 .reverseTitle {
   color: constants.$white;
@@ -69,14 +91,26 @@
     background-repeat: no-repeat;
     content: "";
   }
+  @include media("<=992px") {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  @include media("<=768px") {
+    font-size: 2rem;
+    &::after {
+      margin-top: -1rem;
+    }
+  }
 }
 
 .project {
   padding: 3vmin 6vmin;
+  height: auto;
+  min-height: 100vh;
+  // padding: constants.$padding;
   display: grid;
   flex-direction: column;
-  grid-template-rows: 1fr 2fr;
-  align-items: center;
+  grid-template-rows: 1fr 5fr;
 }
 .darkText {
   color: constants.$white;
@@ -99,7 +133,13 @@
   border: none;
 
   &:hover {
+    transform: rotate(-3deg);
     color: constants.$primaryColor;
+  }
+  @include media("<=992px") {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
   }
 }
 .darkButton {
@@ -119,6 +159,12 @@
   transition: 0.3s ease;
   &:hover {
     color: constants.$accentColor;
+    transform: rotate(-3deg);
+  }
+  @include media("<=992px") {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .darkBackground {

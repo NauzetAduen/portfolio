@@ -1,12 +1,27 @@
 @use "Constants" as constants;
+@import "include-media";
 
 .contact {
   background-color: constants.$accentColor;
-  height: 100%;
+  // height: 100%;
+  height: auto;
+  min-height: 100vh;
   padding: 0 20vmin;
   margin: 0;
   display: grid;
   grid-template-rows: 1fr 3fr;
+  @include media("<=992px") {
+    min-height: auto;
+    grid-template-rows: 1fr 4fr;
+
+    grid-gap: 0;
+    padding: 0;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: flex-start;
+    // height: auto;
+    // min-height: auto;
+  }
 }
 .title {
   padding: 0;
@@ -17,15 +32,26 @@
   font-size: 2.8rem;
   font-weight: 700;
   color: constants.$primaryColor;
+  @include media("<=992px") {
+    font-size: 1.8rem;
+    padding-top: 5vmin;
+  }
 }
 .welcomeDiv {
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @include media("<=992px") {
+    display: flex;
+    padding-bottom: 2rem;
+  }
 }
 .imageDiv {
   width: 100%;
+  @include media("<=992px") {
+    display: none;
+  }
 }
 
 .form {
@@ -34,36 +60,26 @@
   display: flex;
   flex-direction: column;
   // gap: 1;
-}
-.input {
-  align-self: flex-start;
-  height: 2.6rem;
-  width: 18rem;
-  padding-left: 1.4vmin;
-}
-.textArea {
-  height: 15vh;
-  resize: none;
-  padding: 1.4vmin;
-}
-.input,
-.textArea {
-  border-radius: 0.5rem;
-  border: none;
-  font-size: 1.2rem;
-  &::placeholder {
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-align: justify;
-    font-family: constants.$primaryFont;
+  a {
+    text-decoration: none;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  @include media("<=992px") {
+    padding: 0 2rem;
   }
 }
-.input:focus,
-.textArea:focus {
-  outline: none !important;
-  border: none;
-  caret-color: constants.$accentColor;
+.contactText {
+  font-size: 2rem;
+  text-align: justify;
+  @include media("<=992px") {
+    font-size: 1.2rem;
+    text-align: left;
+  }
 }
+
 .submit {
   padding: 0;
   margin: 0;
@@ -81,17 +97,10 @@
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
+    border: 1px solid constants.$white;
+    transform: rotate(-3deg);
     background-color: constants.$white;
     color: constants.$accentColor;
     // border: 1px solid constants.$primaryColor;
   }
-}
-.label {
-  padding: 0;
-  margin: 0;
-}
-.labelDiv {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
 }

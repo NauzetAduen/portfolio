@@ -1,11 +1,16 @@
 @use "Constants" as constants;
-
+@import "include-media";
 .nav {
   position: fixed;
   font-family: constants.$secondaryFont;
   font-size: 28px;
-  width: 100%;
+  width: 100vw;
   font-weight: 700;
+  z-index: 200;
+
+  @include media("<992px") {
+    display: none;
+  }
 }
 .nav ul {
   display: flex;
@@ -52,4 +57,59 @@
   margin: 0;
   padding: 0;
   padding-left: 10px;
+}
+
+.mobileNav {
+  z-index: 5000;
+  position: fixed;
+  width: auto;
+  background-color: constants.$white;
+  right: 0;
+  left: 0;
+  display: none;
+  text-align: end;
+  font-size: 28px;
+  font-weight: 700;
+
+  flex-direction: column;
+  cursor: pointer;
+
+  &:first-child {
+    align-self: flex-end;
+  }
+
+  // padding-right: 1rem;
+
+  @include media("<992px") {
+    display: flex;
+  }
+}
+
+.linkListMobile {
+  // display: block;
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.6s;
+  padding-right: 1rem;
+  color: constants.$primaryColor;
+  a {
+    text-decoration: none;
+    &:visited {
+      color: constants.$primaryColor;
+    }
+  }
+  ul {
+    list-style-type: none;
+    // deco
+  }
+}
+
+.icon {
+  align-self: flex-end;
+}
+.visible {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
