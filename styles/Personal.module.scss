@@ -11,6 +11,9 @@
   grid-template-rows: repeat(1fr);
   padding: 10vh 20vh 10vh 20vh;
   background-color: constants.$primaryColor;
+  @include media("<=992px") {
+    padding: 10vh;
+  }
 }
 
 .title {
@@ -20,6 +23,9 @@
   padding: 3rem 0 1rem 0;
   text-transform: uppercase;
   color: constants.$white;
+  @include media("<=992px") {
+    font-size: 1.8rem;
+  }
 }
 .text {
   font-size: 2rem;
@@ -28,7 +34,10 @@
   text-align: justify;
   color: constants.$grey;
   @include media("<=992px") {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+  @include media("<=768px") {
+    font-size: 1rem;
   }
 }
 .index {
@@ -37,6 +46,10 @@
   font-weight: 700;
   padding-right: 2rem;
   letter-spacing: -0.5rem;
+  @include media("<=992px") {
+    font-size: 2.6rem;
+    letter-spacing: -0.1rem;
+  }
 }
 .textAndIndex p {
   display: inline;
