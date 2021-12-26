@@ -5,7 +5,11 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import Image from "next/image";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef();
