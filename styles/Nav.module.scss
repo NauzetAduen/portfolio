@@ -4,10 +4,11 @@
   position: fixed;
   font-family: constants.$secondaryFont;
   font-size: 28px;
-  width: 100%;
+  width: 100vw;
   font-weight: 700;
   z-index: 200;
-  @include media("<=600px") {
+
+  @include media("<992px") {
     display: none;
   }
 }
@@ -79,7 +80,7 @@
 
   // padding-right: 1rem;
 
-  @include media("<=600px") {
+  @include media("<992px") {
     display: flex;
   }
 }
