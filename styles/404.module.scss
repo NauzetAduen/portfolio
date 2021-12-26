@@ -1,4 +1,5 @@
 @use "Constants" as constants;
+@import "include-media";
 
 .twoRows {
   height: auto;
@@ -6,6 +7,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  @include media("<768px") {
+    grid-template-columns: 0fr 1fr;
+    text-align: center;
+  }
 }
 .lost {
   display: flex;
@@ -47,5 +52,8 @@
   a {
     color: constants.$white;
     text-decoration: none;
+  }
+  @include media("<=768px") {
+    align-self: center;
   }
 }
