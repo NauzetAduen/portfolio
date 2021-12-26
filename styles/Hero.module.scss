@@ -75,7 +75,7 @@
     top: 0;
   }
   //tablet
-  @include media("<=1280px", ">phone") {
+  @include media("<=992px", ">phone") {
     font-size: 3rem;
   }
 }
