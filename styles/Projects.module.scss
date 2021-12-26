@@ -5,6 +5,10 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include media("<=992px") {
+    display: block;
+  }
 }
 .imageColumn {
   display: flex;
@@ -14,9 +18,13 @@
   &:hover {
     transform: scale(1.05);
   }
+  @include media("<=992px") {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .textColumn {
-  //   width: 50%;
   display: grid;
   align-self: center;
   font-size: 2rem;
@@ -55,6 +63,16 @@
     background-repeat: no-repeat;
     content: "";
   }
+  @include media("<=992px") {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  @include media("<=768px") {
+    font-size: 2rem;
+    &::after {
+      margin-top: -1rem;
+    }
+  }
 }
 .reverseTitle {
   color: constants.$white;
@@ -72,6 +90,16 @@
     background-image: url("/underline_white.svg");
     background-repeat: no-repeat;
     content: "";
+  }
+  @include media("<=992px") {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  @include media("<=768px") {
+    font-size: 2rem;
+    &::after {
+      margin-top: -1rem;
+    }
   }
 }
 
@@ -108,6 +136,11 @@
     transform: rotate(-3deg);
     color: constants.$primaryColor;
   }
+  @include media("<=992px") {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
 }
 .darkButton {
   gap: 2rem;
@@ -127,6 +160,11 @@
   &:hover {
     color: constants.$accentColor;
     transform: rotate(-3deg);
+  }
+  @include media("<=992px") {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .darkBackground {
