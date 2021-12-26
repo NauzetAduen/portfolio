@@ -1,17 +1,27 @@
+@import "include-media";
+
 .fullHeight {
-  // height: 100vh;
   min-height: 100vh;
   height: auto;
+  @include media("<=992px", ">phone") {
+    min-height: auto;
+  }
 }
 .thirdHeight {
   // height: 30vh;
   min-height: 30vh;
   height: auto;
+  @include media("<=992px", ">phone") {
+    min-height: auto;
+  }
 }
 .halfHeight {
   // height: 70vh;
   min-height: 70vh;
   height: auto;
+  @include media("<=992px", ">phone") {
+    min-height: auto;
+  }
 }
 
 .underscore {
