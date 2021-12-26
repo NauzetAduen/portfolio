@@ -1,4 +1,5 @@
 @use "Constants" as constants;
+@import "include-media";
 
 .footer {
   background-color: constants.$white;
@@ -11,6 +12,10 @@
   padding: 2rem;
   height: auto;
   min-height: 20vh;
+  @include media("<=992px", ">phone") {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 .footerTitle {
