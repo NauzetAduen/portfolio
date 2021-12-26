@@ -27,7 +27,7 @@
   padding: 0;
   text-align: justify;
   color: constants.$grey;
-  @include media("<=992px", ">phone") {
+  @include media("<=992px") {
     font-size: 1.4rem;
   }
 }

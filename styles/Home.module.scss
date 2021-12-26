@@ -3,7 +3,7 @@
 .fullHeight {
   min-height: 100vh;
   height: auto;
-  @include media("<=992px", ">phone") {
+  @include media("<=992px") {
     min-height: auto;
   }
 }
@@ -11,7 +11,7 @@
   // height: 30vh;
   min-height: 30vh;
   height: auto;
-  @include media("<=992px", ">phone") {
+  @include media("<=992px") {
     min-height: auto;
   }
 }
@@ -19,7 +19,7 @@
   // height: 70vh;
   min-height: 70vh;
   height: auto;
-  @include media("<=992px", ">phone") {
+  @include media("<=992px") {
     min-height: auto;
   }
 }

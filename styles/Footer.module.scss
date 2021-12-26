@@ -12,7 +12,7 @@
   padding: 2rem;
   height: auto;
   min-height: 20vh;
-  @include media("<=992px", ">phone") {
+  @include media("<=992px") {
     gap: 1rem;
     font-size: 0.8rem;
   }
