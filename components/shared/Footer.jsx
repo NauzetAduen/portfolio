@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div>
           <p className={styles.footerTitle}> Copyright </p>
-          <p className={styles.footerCopyright}>Nau Hdez &copy; 2021</p>
+          <p className={styles.footerCopyright}>Nau Hdez &copy; 2022</p>
           <Image src="/favicon.ico" width="50px" height="50px" />
         </div>
       </div>
