@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Image from "next/image";
 
-import CodeChallenge from "../assets/code_challenge.png";
-import Diabetiary from "../assets/diabetiary.png";
-import HikingApp from "../assets/hiking_app.png";
+import CodeChallenge from "../public/code_challenge.png";
+import Diabetiary from "../public/diabetiary.png";
+import HikingApp from "../public/hiking_app.png";
 import Footer from "../components/shared/Footer";
 import Nav from "../components/shared/Nav";
 import generalStyles from "../styles/Home.module.scss";
