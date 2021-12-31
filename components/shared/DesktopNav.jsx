@@ -1,29 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { memo, useEffect, useState } from "react";
+import { memo } from "react";
 
 import styles from "../../styles/Nav.module.scss";
 
 function DesktopNav() {
-  const [color, setColor] = useState("#000");
-  const route = useRouter().asPath;
-  useEffect(() => {
-    const handleScroll = () => {
-      window.pageYOffset > window.innerHeight &&
-      window.pageYOffset < window.innerHeight * 2
-        ? setColor("#FFF")
-        : setColor("#000");
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <nav className={styles.nav}>
-      <ul style={{ color: color }}>
+      <ul>
         <li>
           <Link href="/">
             <div className={styles.logoDiv}>
