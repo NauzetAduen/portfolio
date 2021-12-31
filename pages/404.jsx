@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Nav from "../components/shared/Nav";
-import lost from "../public/Lost.svg";
+import lost from "../public/lost.svg";
 import styles from "../styles/404.module.scss";
 import generalStyles from "../styles/Home.module.scss";
 
