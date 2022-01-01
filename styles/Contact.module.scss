@@ -70,12 +70,19 @@
   @include media("<=992px") {
     padding: 0 2rem;
   }
+  @include media("<=992px") {
+    padding: 0 6rem;
+  }
 }
 .contactText {
   font-size: 2rem;
   text-align: justify;
   @include media("<=992px") {
     font-size: 1.2rem;
+    text-align: left;
+  }
+  @include media("<=768px") {
+    font-size: 1rem;
     text-align: left;
   }
 }
