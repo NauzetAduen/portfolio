@@ -39,7 +39,7 @@
   font-weight: 500;
   @include media("<=768px") {
     //mobile
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: left;
   }
   @include media("<=992px", ">768px") {
@@ -77,6 +77,9 @@
   //tablet
   @include media("<=992px") {
     font-size: 3rem;
+  }
+  @include media("<=768px") {
+    font-size: 2rem;
   }
 }
 
