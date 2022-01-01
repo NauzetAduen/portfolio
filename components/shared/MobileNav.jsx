@@ -18,7 +18,7 @@ export default function MobileNav() {
       <div className={styles.visible}>
         <Link href="/">
           <div className={styles.logoDiv}>
-            <Image src="/favicon.ico" width="50px" height="50px" />
+            <Image src="/favicon.ico" width="25px" height="25px" />
             <p className={styles.textLogo}>nau.</p>
           </div>
         </Link>
