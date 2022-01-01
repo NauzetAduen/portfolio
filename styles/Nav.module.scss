@@ -63,6 +63,8 @@
   position: fixed;
   width: auto;
   background-color: constants.$white;
+  color: constants.$primaryColor;
+
   right: 0;
   left: 0;
   display: none;
@@ -90,6 +92,8 @@
   color: constants.$primaryColor;
   a {
     text-decoration: none;
+    color: constants.$primaryColor;
+
     &:visited {
       color: constants.$primaryColor;
     }
