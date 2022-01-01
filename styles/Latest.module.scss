@@ -66,6 +66,9 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 2rem;
+  @include media("<=992px") {
+    grid-gap: 0.5rem;
+  }
 }
 
 .creationTitle {
@@ -76,7 +79,7 @@
   font-weight: 700;
   letter-spacing: 0.05rem;
   @include media("<=992px") {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -93,7 +96,7 @@
   text-align: justify;
   font-size: 1.6rem;
   color: constants.$white;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 .seeMore {
   text-align: center;
@@ -113,12 +116,20 @@
   font-size: 1.3rem;
   padding: 0.5rem 0;
   margin: 0;
+  @include media("<=992px") {
+    font-size: 0.9rem;
+    text-align: left;
+  }
 }
 .digit {
   font-size: 5rem;
   font-weight: 900;
   letter-spacing: -0.5rem;
   color: constants.$accentColor;
+  @include media("<=992px") {
+    font-size: 2.5rem;
+    letter-spacing: -0.1rem;
+  }
 }
 
 .notHidden {
