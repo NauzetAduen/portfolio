@@ -2,6 +2,7 @@
 @import "include-media";
 .nav {
   position: fixed;
+  background-color: constants.$white;
   font-family: constants.$secondaryFont;
   font-size: 28px;
   width: 100vw;
@@ -27,19 +28,16 @@
   margin-right: auto;
 }
 .nav li a {
-  color: constants.$grey;
+  color: constants.$primaryColor;
   display: inline-block;
   padding: 20px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   &:hover {
-    transition: all 0.3s ease-in-out;
     transform: translateY(-10px);
     text-decoration: underline;
+    color: constants.$accentColor;
   }
-}
-.nav li a:visited {
-  color: constants.$grey;
 }
 
 .logoDiv {
@@ -79,15 +77,12 @@
     align-self: flex-end;
   }
 
-  // padding-right: 1rem;
-
   @include media("<992px") {
     display: flex;
   }
 }
 
 .linkListMobile {
-  // display: block;
   height: 0px;
   overflow: hidden;
   transition: height ease 0.6s;
