@@ -14,6 +14,9 @@
   @include media("<=992px") {
     padding: 10vh;
   }
+  @include media("<=768px") {
+    padding: 4rem;
+  }
 }
 
 .title {
@@ -26,6 +29,9 @@
   @include media("<=992px") {
     font-size: 1.8rem;
   }
+  @include media("<=768px") {
+    font-size: 1.4rem;
+  }
 }
 .text {
   font-size: 2rem;
@@ -35,6 +41,7 @@
   color: constants.$grey;
   @include media("<=992px") {
     font-size: 1.5rem;
+    text-align: center;
   }
   @include media("<=768px") {
     font-size: 1rem;
@@ -49,6 +56,12 @@
   @include media("<=992px") {
     font-size: 2.6rem;
     letter-spacing: -0.1rem;
+    padding-right: 1.2rem;
+  }
+  @include media("<=768px") {
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    padding-right: 0.8rem;
   }
 }
 .textAndIndex p {
