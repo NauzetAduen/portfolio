@@ -21,9 +21,7 @@ function Contact() {
             rel="noopener noreferrer"
             href="https://docs.google.com/forms/d/e/1FAIpQLScLEzzNHWDOEUxhgPkMX2iwQd5pWPS1losAx_HADVub1GX2Ng/viewform?usp=sf_link"
           >
-            <button className={styles.submit}>
-              <p className={styles.buttonText}>Contact me</p>
-            </button>
+            <button className={styles.submit}>Contact me</button>
           </a>
         </div>
         <div className={styles.imageDiv}>
