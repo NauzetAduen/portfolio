@@ -56,23 +56,23 @@
 
 .form {
   width: 100%;
-  padding: 2vmin 3vmin;
+  padding: constants.$padding;
+
   display: flex;
   flex-direction: column;
   // gap: 1;
   a {
+    align-self: center;
     text-decoration: none;
     p {
       padding: 0;
       margin: 0;
     }
   }
-  @include media("<=992px") {
-    padding: 0 2rem;
-  }
-  @include media("<=992px") {
-    padding: 0 6rem;
-  }
+  // @include media("<=992px") {
+  //   // padding: constants.$padding;
+  //   text-align: center;
+  // }
 }
 .contactText {
   font-size: 2rem;
@@ -83,14 +83,14 @@
   }
   @include media("<=768px") {
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
   }
 }
 
 .submit {
   padding: 0;
   margin: 0;
-  align-self: flex-end;
+  // align-self: center;
   display: block;
   background-color: constants.$primaryColor;
   border: 1px solid constants.$primaryColor;
