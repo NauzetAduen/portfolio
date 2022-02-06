@@ -15,9 +15,9 @@ export default function Introduction() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.link}
-              href="https://adedelivered.com/"
+              href="https://www.barkibu.com"
             >
-              ADE
+              Barkibu
             </a>{" "}
             and I live in Las Palmas de Gran Canaria, Spain.
           </p>
@@ -56,9 +56,9 @@ export default function Introduction() {
             >
               Flutter
             </a>{" "}
-            advocate, at work I use ReactJS and this portfolio was made with
-            NextJS, so I consider myself a Frontend developer. Still, I have
-            experience with backends like firebase.
+            advocate, at work I've used ReactJS and Flutter and this portfolio
+            was made with NextJS, so I consider myself a Frontend developer.
+            Still, I have experience with backends like firebase.
           </p>
         </div>
       </div>
