@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Image from "next/image";
 
+import BarkibuWeb from "../public/barkibu_web.png";
+import Emobility from "../public/e-mobility.jpg";
 import CodeChallenge from "../public/code_challenge.png";
 import Diabetiary from "../public/diabetiary.png";
 import HikingApp from "../public/hiking_app.png";
@@ -29,7 +31,47 @@ export default function projects() {
       <main>
         <div className={generalStyles.fullHeight}>
           <div className={styles.project}>
-            <span className={styles.title}>Code Challenge</span>
+            <span className={styles.title}>Barkibu Apps</span>
+            <div className={styles.twoColumns}>
+              <div className={styles.imageColumn}>
+                <Image src={BarkibuWeb} />
+              </div>
+              <div className={styles.textColumn}>
+                I'm currently helping barkibu with their apps in Android and
+                iOS.
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.barkibu.com/es"
+                >
+                  <button className={styles.button}>
+                    <Image src="/barkibu.svg" width="150px" height="50px" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={generalStyles.fullHeight + " " + styles.darkBackground}>
+          <div className={styles.project}>
+            <span className={styles.title}>E-mobility</span>
+            <div className={styles.twoColumns + " " + styles.lightText}>
+              <div className={styles.textColumn}>
+                At my last work, I helped to create an webapp to allow companies
+                to enter the e-mobility sector. I'll update when the product
+                goes live.
+              </div>
+              <div className={styles.imageColumn}>
+                <Image src={Emobility} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className={generalStyles.fullHeight + " " + styles.orangeBackground}
+        >
+          <div className={styles.project}>
+            <span className={styles.reverseTitle}>Code Challenge</span>
             <div className={styles.twoColumns}>
               <div className={styles.imageColumn}>
                 <Image src={CodeChallenge} />
@@ -42,7 +84,7 @@ export default function projects() {
                   rel="noopener noreferrer"
                   href="https://github.com/NauzetAduen/coding-challenge"
                 >
-                  <button className={styles.button}>
+                  <button className={styles.darkButton}>
                     Github
                     <FontAwesomeIcon icon={faGithub} size="1x" />
                   </button>
@@ -67,11 +109,9 @@ export default function projects() {
           </div>
         </div>
 
-        <div
-          className={generalStyles.fullHeight + " " + styles.orangeBackground}
-        >
+        <div className={generalStyles.fullHeight}>
           <div className={styles.project}>
-            <span className={styles.reverseTitle}>HikingApp - TFG</span>
+            <span className={styles.title}>HikingApp - TFG</span>
             <div className={styles.twoColumns}>
               <div className={styles.imageColumn}>
                 <Image src={HikingApp} />
@@ -85,7 +125,7 @@ export default function projects() {
                   rel="noopener noreferrer"
                   href="https://github.com/NauzetAduen/hiking_app_public"
                 >
-                  <button className={styles.darkButton}>
+                  <button className={styles.button}>
                     Github
                     <FontAwesomeIcon icon={faGithub} size="1x" />
                   </button>

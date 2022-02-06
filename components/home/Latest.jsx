@@ -22,9 +22,10 @@ function Latest() {
               <div className={styles.digit}>01</div>
             </div>
             <div className={styles.subcreationText}>
-              <p className={styles.creationTitle}>Code Challenge for ADE</p>
+              <p className={styles.creationTitle}>Barkibu App</p>
               <p className={styles.creationDesc}>
-                This challenge help me land a job as a Flutter developer in ADE.
+                Currently, I'm part of the team developing both Android and IOS
+                apps.
               </p>
             </div>
           </div>
@@ -33,9 +34,10 @@ function Latest() {
               <div className={styles.digit}>02</div>
             </div>
             <div className={styles.subcreationText}>
-              <p className={styles.creationTitle}>Portfolio</p>
+              <p className={styles.creationTitle}>ADE main project</p>
               <p className={styles.creationDesc}>
-                This project was made with NextJs as a learning experience.
+                Project to help companies to enter the e-mobility world. Worked
+                there til MVP.
               </p>
             </div>
           </div>
