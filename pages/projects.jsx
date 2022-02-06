@@ -42,7 +42,7 @@ export default function projects() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.barkibu.com/es"
+                  href="https://www.barkibu.com/"
                 >
                   <button className={styles.button}>
                     <Image src="/barkibu.svg" width="150px" height="50px" />
@@ -57,7 +57,7 @@ export default function projects() {
             <span className={styles.title}>E-mobility</span>
             <div className={styles.twoColumns + " " + styles.lightText}>
               <div className={styles.textColumn}>
-                At my last work, I helped to create an webapp to allow companies
+                At my last work, I helped to create a webapp to allow companies
                 to enter the e-mobility sector. I'll update when the product
                 goes live.
               </div>
