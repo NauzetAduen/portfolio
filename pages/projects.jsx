@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Image from "next/image";
 
-import BarkibuWeb from "../public/barkibu_web.png";
+import BarkibuWeb from "../public/barkibu-web.png";
 import Emobility from "../public/e-mobility.jpg";
 import CodeChallenge from "../public/code_challenge.png";
 import Diabetiary from "../public/diabetiary.png";
