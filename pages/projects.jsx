@@ -42,7 +42,7 @@ export default function projects() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.barkibu.com/es"
+                  href="https://www.barkibu.com/"
                 >
                   <button className={styles.button}>
                     <Image src="/barkibu.svg" width="150px" height="50px" />
